@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        img{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="Screenshot 2024-05-21 013701.png" width="400" alt="">
+    <button id="b1" style="position: absolute; bottom:  190px; left: 180px;">Image</button>
+<div id="img" style="position: absolute; top: 90px; left: 100px;">
+    <img  onmousemove="main.src = this.src" src="Genshin impact.png" width="100px" alt="">
+    <img  onmousemove="main.src = this.src" src="NARAkABLADEPOINT.png"  width="100px" alt="">
+    <br>
+    <img  onmousemove="main.src = this.src" src="Blackrooms Doors.png"width="100px" alt="">
+    <img  onmousemove="main.src = this.src" src="Among Us.png"width="100px" alt="">
+    <br>
+    <img  onmousemove="main.src = this.src" src="For Honor.png"width="200px" name="main" height="200px">
+    
+</div>
+
+<button id="b2" style="position: absolute; bottom: 164px; left: 180px;">Vedios</button>
+<div id="vedios" style="position: absolute; top: 100px;left: 72px;">
+    <video src="" width="270px" controls preload="metadata" style="border: red;" preload="metadata" ></video>
+    <br>
+    <video src="" width="270px" controls preload="metadata" style="border: red;"></video>
+    <br>
+    <video src="" width="270px"  controls preload="metadata" style="border: red;"></video>
+</div>
+<script>
+    $(document).ready(function(){
+       $("#img").hide()
+       $("#vedios").hide()
+
+       $("#b1").click(function(){
+        $("#img").show()
+        $("#b1").hide()
+        $("#b2").hide()
+
+       })
+       $("#b2").click(function(){
+        $("#vedios").show()
+        $("#b1").hide() 
+        $("#b2").hide()
+       })
+    })
+</script>
+</body>
+</html>
